@@ -79,7 +79,7 @@ class DemoViewController1: UIViewController {
 
         view.backgroundColor = UIColor(red: 80/255, green: 70/255, blue: 66/255, alpha: 1.0)
 
-        let cancelButton = UIBarButtonItem(image: UIImage(named: "cancel"), style: .plain, target: self, action: #selector(UIViewController.dismiss))
+        let cancelButton = UIBarButtonItem(image: UIImage(named: "cancel"), style: .plain, target: self, action: #selector(UIViewController.dismissFromController))
         let rightButton = UIBarButtonItem(image: UIImage(named: "options"), style: .plain, target: self, action: #selector(DemoViewController1.showRightDropdown))
 
         navigationItem.leftBarButtonItem = cancelButton
@@ -109,7 +109,7 @@ class DemoViewController2: UIViewController, UITableViewDataSource, UITableViewD
         title = "Demo 2"
         view.backgroundColor = UIColor.white
 
-        let cancelButton = UIBarButtonItem(image: UIImage(named: "cancel"), style: .plain, target: self, action: #selector(UIViewController.dismiss))
+        let cancelButton = UIBarButtonItem(image: UIImage(named: "cancel"), style: .plain, target: self, action: #selector(UIViewController.dismissFromController))
         let menuButton = UIBarButtonItem(image: UIImage(named: "options"), style: .plain, target: self, action: #selector(DemoViewController1.showRightDropdown))
         tableView.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
         navigationItem.leftBarButtonItem = cancelButton
@@ -212,15 +212,15 @@ extension UIViewController {
 
     fileprivate func createDummyDatasource() -> [AZDropdownMenuItemData] {
         var dataSource: [AZDropdownMenuItemData] = []
-        dataSource.append(AZDropdownMenuItemData(title:"Action With Icon 1", icon:UIImage(imageLiteral: "1_a")))
-        dataSource.append(AZDropdownMenuItemData(title:"Action With Icon 2", icon:UIImage(imageLiteral: "2_a")))
-        dataSource.append(AZDropdownMenuItemData(title:"Action With Icon 3", icon:UIImage(imageLiteral: "3_a")))
-        dataSource.append(AZDropdownMenuItemData(title:"Action With Icon 4", icon:UIImage(imageLiteral: "4_a")))
-        dataSource.append(AZDropdownMenuItemData(title:"Action With Icon 5", icon:UIImage(imageLiteral: "5_a")))
+        dataSource.append(AZDropdownMenuItemData(title:"Action With Icon 1", icon:UIImage(imageLiteralResourceName: "1_a")))
+        dataSource.append(AZDropdownMenuItemData(title:"Action With Icon 2", icon:UIImage(imageLiteralResourceName: "2_a")))
+        dataSource.append(AZDropdownMenuItemData(title:"Action With Icon 3", icon:UIImage(imageLiteralResourceName: "3_a")))
+        dataSource.append(AZDropdownMenuItemData(title:"Action With Icon 4", icon:UIImage(imageLiteralResourceName: "4_a")))
+        dataSource.append(AZDropdownMenuItemData(title:"Action With Icon 5", icon:UIImage(imageLiteralResourceName: "5_a")))
         return dataSource
     }
 
-    func dismiss() {
+    func dismissFromController() {
         self.dismiss(animated: true, completion: nil)
     }
 }
