@@ -2,9 +2,9 @@ source 'https://github.com/CocoaPods/Specs.git'
 use_frameworks!
 
 target 'AZDropdownMenu_Example' do
-  pod "AZDropdownMenu", :path => "../"
+  pod 'AZDropdownMenu', :path => '../'
 end
 
 target 'AZDropdownMenu_Tests' do
-  pod "AZDropdownMenu", :path => "../"
+  pod 'AZDropdownMenu', :path => '../'
 end
