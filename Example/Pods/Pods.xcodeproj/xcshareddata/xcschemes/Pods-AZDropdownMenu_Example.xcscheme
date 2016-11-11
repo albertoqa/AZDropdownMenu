@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0BA6525597C1B817693051CCA494E16A"
-               BuildableName = "AZDropdownMenu.framework"
-               BlueprintName = "AZDropdownMenu"
+               BlueprintIdentifier = "A9CAD152AD3397E30D5A677C0F1A514B"
+               BuildableName = "Pods_AZDropdownMenu_Example.framework"
+               BlueprintName = "Pods-AZDropdownMenu_Example"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0BA6525597C1B817693051CCA494E16A"
-            BuildableName = "AZDropdownMenu.framework"
-            BlueprintName = "AZDropdownMenu"
+            BlueprintIdentifier = "A9CAD152AD3397E30D5A677C0F1A514B"
+            BuildableName = "Pods_AZDropdownMenu_Example.framework"
+            BlueprintName = "Pods-AZDropdownMenu_Example"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

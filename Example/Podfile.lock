@@ -1,14 +1,16 @@
 PODS:
-  - AZDropdownMenu (0.1.0)
+  - AZDropdownMenu (1.1.1)
 
 DEPENDENCIES:
   - AZDropdownMenu (from `../`)
 
 EXTERNAL SOURCES:
   AZDropdownMenu:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
-  AZDropdownMenu: f8e95d9d645aee4e52a195df2394afb9f36f7d78
+  AZDropdownMenu: 2a66851e24baa2c31128d0a13e5eecffff707837
 
-COCOAPODS: 0.39.0
+PODFILE CHECKSUM: e7659a3948e29ebf304142f038496d1cc02c8397
+
+COCOAPODS: 1.1.1
